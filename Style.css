@@ -1,0 +1,291 @@
+
+{
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 20px;
+  font-size: 15px;
+}
+html {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0px;
+  padding: 0px;
+}
+.layar-dalam {
+  width: 1000px;
+  margin: auto;
+}
+.layar-penuh {
+  width: 100%;
+}
+nav {
+  z-index: 100;
+  color: #fff;
+  text-align: center;
+  position: fixed;
+  border-bottom: 1px solid #516759;
+  line-height: 5px;
+  width: 100%;
+  background-color: #2d4035;
+  transition: background-color 0.5s ease;
+  display: flex;
+  justify-content: space-between; /* Memastikan elemen di dalam navbar terpisah */
+  align-items: right; /* Vertikal center */
+  padding: 10px 20px; /* Atur padding */
+}
+.logo {
+    display: flex;
+    align-items: left; /* Vertically center */
+    margin-left: 10; /* Pastikan tidak ada margin yang menghalangi */
+}
+
+.logo span {
+    font-size: 24px; /* Ukuran font untuk teks JakLhok */
+    color: #fff; /* Warna teks */
+    font-weight: bold; /* Menebalkan teks */
+    align-items: left; /* Vertically center */
+    margin-left: 10; /* Pastikan tidak ada margin yang menghalangi */
+    line-height: 15px;
+}
+nav .logo {
+  float: left;
+  position: relative;
+  line-height: 55px;
+  text-align: left;
+}
+nav .logo img {
+  vertical-align: left;
+  width: 120px;
+}
+
+nav .menu {
+  float: right;
+  height: 25px;
+  max-width: 600px;
+  margin-right: 20px; /* tambahkan ini */
+}
+
+nav .menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav .menu ul li {
+  list-style-type: none;
+  float: left;
+  line-height: 15px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-align: center;
+  padding: 0px 20px 0px 20px;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* pengaturan header */
+header {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  z-index: 2;
+}
+header img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
+}
+header .intro {
+  z-index: 100;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  top: 45%;
+}
+header .intro h3 {
+  font-size: 70px;
+  margin: 0;
+  padding: 0;
+  font-family: 'Adlery Pro', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin-bottom: 80px; /* Menambah jarak ke bawah */
+}
+header .intro h4 {
+  font-size: 19px;
+  color: #e5eddf;
+  margin: 0;
+  padding: 0;
+  font-family: 'Adlery Pro', 'Lucida Grande';
+  margin-bottom: 10px; /* Menambah jarak ke bawah */
+}
+header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #000;
+  opacity: 50%;
+  z-index: -1;
+}
+.tombol-menu {
+  position: absolute;
+  top: 1.7rem;
+  right: 1rem;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 20px;
+}
+.tombol-menu .garis {
+  height: 3px;
+  background-color: #fff;
+}
+section {
+  padding: 10px 0px 10px 0px;
+}
+section h3 {
+  color: #1c3526;
+  font-size: 40px;
+}
+section h3::after {
+  content: "";
+  border-bottom: 5px solid #2d4035;
+  padding: 0px 0px 0px 0px;
+  width: 70px;
+  display: block;
+  margin: 10px auto;
+}
+
+/* pengaturan About Us */
+#aboutus,
+#team,
+#blog {
+  text-align: center;
+}
+section p.ringkasan {
+  font-style: italic;
+  font-size: 18px;
+  color: #ababab;
+  text-align: center;
+  position: relative;
+  margin-top: -15px !important;
+}
+section .konten-isi p {
+  font-style: normal;
+  text-align: center;
+  margin-top: -10px !important;
+}
+nav.putih {
+  background-color: #4d3535;
+}
+nav.putih .tombol-menu .garis {
+  background-color: #333;
+}
+nav.putih ul li a {
+  color: #333;
+}
+nav .logo img.hitam {
+  display: none;
+}
+section.abuabu {
+  background-color: #f5f6f6;
+}
+#wisata {
+  background-color: #2d4035; /* Ganti dengan kode warna hijau yang diinginkan */
+  padding: 20px; /* Tambahkan padding jika perlu */
+  color: white; /* Mengubah warna teks menjadi putih agar kontras */
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap; /* Agar responsif di layar kecil */
+}
+.box-wisata {
+  flex: 1; /* Membagi ruang secara merata */
+  margin: 10px; /* Jarak antar gambar */
+  text-align: center;
+}
+.box-wisata img {
+  width: 100%; /* Mengatur lebar gambar */
+  height: 60%; /* Mempertahankan rasio aspek */
+  border-radius: 10px; /* Atur nilai untuk sudut melengkung */
+}
+.box-wisata p {
+  font-size: 16px;
+  color: #ffffff; /* Warna teks */
+  padding: 0 13px; /* Jarak samping untuk paragraf */
+}
+.overlay h2 {
+  margin: 0; /* Menghilangkan margin pada judul */
+  color: #fff;
+  font-size: 38px;
+  text-align: center; /* Memastikan teks di tengah */
+  margin-bottom: 20px; /* Jarak di bawah tulisan Tour */
+}
+a {
+  color:  white;; /* Ganti dengan warna yang diinginkan */
+}
+#map h2 {
+    font-size: 32px; /* Ukuran font lebih besar */
+    font-weight: bold; /* Membuat teks lebih tebal */
+    color: #2d4035; /* Warna teks */
+    text-align: center; /* Memusatkan teks */
+    margin-bottom: 20px; /* Jarak di bawah teks */
+}
+#map img {
+    max-width: 100%; /* Memastikan gambar tidak lebih lebar dari kontainer */
+    height: auto;    /* Mempertahankan rasio aspek gambar */
+    width: 70%;      /* Atur lebar gambar sesuai kebutuhan */
+    margin: 0 auto;  /* Memusatkan gambar secara horizontal */
+    display: block;   /* Mengubah gambar menjadi block untuk margin auto */
+}
+#.profile-picture {
+    width: 100px; /* Atur lebar gambar */
+    height: 30px; /* Mempertahankan rasio aspek */
+    border-radius: 50%; /* Membuat gambar menjadi bulat */
+    float: right; /* Mengapungkan gambar ke kanan */
+    margin-left: 20px; /* Jarak antara gambar dan teks */
+}
+footer {
+    padding: 40px 0;
+    background-color: #343a40;
+    color: #fff;
+}
+
+.footer-container {
+    display: flex;
+    align-items: center; /* Vertically center the content */
+    justify-content: center; /* Center horizontally */
+}
+
+.footer-image {
+    margin-right: 20px; /* Space between image and info */
+}
+
+.footer-image img {
+    width: 130px; /* Atur lebar gambar sesuai keinginan */
+    height: 150px; /* Mempertahankan rasio aspek */
+    border-radius: 50%; /* Membuat gambar menjadi bulat */
+}
+
+.footer-info {
+    text-align: left; /* Align text to the left */
+}
+
+.footer-info h2, .footer-info h3, .footer-info h5, .footer-info p {
+    margin: 5px 0; /* Jarak antar elemen */
+}
